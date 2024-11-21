@@ -45,8 +45,8 @@ arma::sp_mat  balanced_knn(const arma::mat& d,int k,int maxl,bool returnDistance
       while(p<k) {
 	std::stringstream es; 
 	es<<"unable to find unfilled neighbors for i="<<i<<" el="<<el<<" p="<<p;
-# Commented out due to the installation error: https://github.com/velocyto-team/velocyto.R/issues/211
-#	Rf_warning(es.str().c_str()); 
+// Commented out due to the installation error: https://github.com/velocyto-team/velocyto.R/issues/211
+//	Rf_warning(es.str().c_str()); 
 	rowind[el*k+p]=el; p++;
       }
     }
